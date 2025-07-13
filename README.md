@@ -1,4 +1,4 @@
-# 🚀 Sathyam's Portfolio Website
+# 🚀 Portfolio Website
 
 A modern, responsive portfolio website with dark/light theme and smooth animations.
 
