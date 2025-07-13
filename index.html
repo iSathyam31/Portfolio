@@ -1,770 +1,860 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Sathyam A</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathyam A - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="gradient-text">Sathyam A</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#activities" class="nav-link">Activities</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="greeting-animation">
+                        <span class="wave">👋</span>
+                        <span class="greeting-text">Hello, I'm</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="typing-text">Sathyam A</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span class="gradient-text dynamic-gradient">AI Software Developer</span>
+                    </h2>
+                    <p class="hero-description">
+                        Passionate about Artificial Intelligence, Machine Learning, and creating innovative solutions 
+                        that make a difference. Currently pursuing B.Tech in Computer Science at IIIT Sri City.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">250+</span>
+                            <span class="stat-label">Students Mentored</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Club Events & Hackathons Organized</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Internship Completed</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary ripple-effect">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image">
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-social">
+                <a href="https://github.com/iSathyam31" target="_blank" class="social-link" data-tooltip="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/isathyam31/" target="_blank" class="social-link" data-tooltip="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:sathyam.a31@gmail.com" class="social-link" data-tooltip="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span class="scroll-text">Scroll Down</span>
+        </div>
+    </section>
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a passionate AI Software Developer currently pursuing my Bachelor's degree 
+                        in Computer Science at the prestigious Indian Institute of Information Technology, Sri City.
+                    </p>
+                    <p>
+                        With hands-on experience in developing cutting-edge AI solutions, I specialize in machine learning, 
+                        deep learning, and generative AI technologies. My work spans from creating intrusion detection systems 
+                        to building cross-platform mobile applications.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Domains Explored</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-label">Tech Stack Mastered</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image">
+                        <img src="assets/profile/profile.jpeg" alt="Sathyam A Profile Photo" class="profile-photo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Flaticons  -->
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- 10th Class - Top -->
+                    <div class="timeline-item timeline-top">
+                        <div class="timeline-marker">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="education-card">
+                            <div class="education-header">
+                                <h3>10th Class (CBSE)</h3>
+                                <span class="institution">Sri Chaitanya International School</span>
+                                <span class="period">2018 - 2019</span>
+                                <span class="location">Electronic City, Bengaluru</span>
+                            </div>
+                            <div class="education-details">
+                                <p>Completed secondary education with strong foundation in Mathematics and Science</p>
+                            </div>
+                        </div>
+                    </div>
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+                    <!-- 12th Class - Bottom -->
+                    <div class="timeline-item timeline-bottom">
+                        <div class="timeline-marker">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="education-card">
+                            <div class="education-header">
+                                <h3>12th Class (CBSE)</h3>
+                                <span class="institution">Aklank Public School</span>
+                                <span class="period">2021 - 2022</span>
+                                <span class="location">Kota, Rajasthan</span>
+                            </div>
+                            <div class="education-details">
+                                <p>Specialized in Physics, Chemistry, Mathematics & Computer Science with focus on JEE preparation</p>
+                            </div>
+                        </div>
+                    </div>
 
-	</head>
-	<body>
-	<div id="colorlib-page">
-		<div class="container-wrap">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-			<div class="text-center">
-				<div class="author-img" style="background-image: url(images/about.jpg);"></div>
-				<h1 id="colorlib-logo"><a href="index.html">Sathyam A</a></h1>
-				<span class="position"><a href="#">Data Science Enthusiast</a></span>
-			</div>
-			<nav id="colorlib-main-menu" role="navigation" class="navbar">
-				<div id="navbar" class="collapse">
-					<ul>
-						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-						<li><a href="#" data-nav-section="about">About</a></li>
-						<li><a href="#" data-nav-section="services">Services</a></li>
-						<li><a href="#" data-nav-section="skills">Skills</a></li>
-						<li><a href="#" data-nav-section="education">Education</a></li>
-						<li><a href="#" data-nav-section="experience">Experience</a></li>
-						<li><a href="#" data-nav-section="vol-experience">Volunteering Experience</a></li>
-						<li><a href="#" data-nav-section="projectsbro">Projects</a></li>
-						<li><a href="#" data-nav-section="contact">Contact</a></li>
-					</ul>
-				</div>
-			</nav>
+                    <!-- B.Tech - Top -->
+                    <div class="timeline-item timeline-top">
+                        <div class="timeline-marker">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-card">
+                            <div class="education-header">
+                                <h3>BTech in Computer Science</h3>
+                                <span class="institution">IIIT Sri City</span>
+                                <span class="period">November 2022 - Present</span>
+                                <span class="location">Chittoor, Andhra Pradesh</span>
+                            </div>
+                            <div class="education-details">
+                                <p>Pursuing advanced studies in Computer Science with focus on Data Science and Generative AI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			
-				
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-grid">
+                <!-- AI Variant Experience -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <h3>Data Science Intern</h3>
+                            <div class="experience-company">AI Variant</div>
+                            <div class="experience-period">May 2024 - July 2024</div>
+                        </div>
+                        <div class="experience-badge">Internship</div>
+                    </div>
+                    <div class="experience-description">
+                        <p>Developed and implemented machine learning models for data analysis and predictive analytics. Worked extensively with Python libraries including pandas, numpy, and scikit-learn.</p>
+                        <p>Collaborated with senior data scientists to optimize model performance and contributed to the development of automated data processing pipelines.</p>
+                        <p>Gained hands-on experience in data visualization, statistical analysis, and presented findings to stakeholders through comprehensive reports.</p>
+                    </div>
+                </div>
 
-		</aside>
+                <!-- Emphas AI Experience -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <h3>Generative AI Developer</h3>
+                            <div class="experience-company">Emphas AI</div>
+                            <div class="experience-period">November 2024 - January 2025</div>
+                        </div>
+                        <div class="experience-badge">Contract</div>
+                    </div>
+                    <div class="experience-description">
+                        <p>Partnered with one of our hackathon sponsors during the techno-cultural fest, fulfilling their request for a technical
+                            contribution in return for sponsorship support</p>
+                        <p>Collaborated with their team to build a Retrieval-Augmented Generation (RAG) pipeline for extracting structured
+                            information from 50 Purchase Order documents</p>
+                        <p>Led coordination efforts and experimented with dense, sparse, and hybrid retrieval methods—achieving a 35–40%
+                            improvement in extraction accuracy while enhancing communication and project management skills</p>
+                    </div>
+                </div>
 
-		<div id="colorlib-main">
-			<section id="colorlib-hero" class="js-fullheight" data-section="home">
-				<div class="flexslider js-fullheight">
-					<ul class="slides">
-				   	<li style="background-image: url(images/img_bg_1.jpg);">
-				   		<div class="overlay"></div>
-				   		<div class="container-fluid">
-				   			<div class="row">
-					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-					   				<div class="slider-text-inner js-fullheight">
-					   					<div class="desc">
-						   					<h1>Hi! <br>I'm Sathyam</h1>
-						   					<!-- <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2> -->
-											   <p>
-												<a class="btn btn-primary btn-learn" href="http://www.example.com">
-												  Download CV <i class="icon-briefcase3"></i>
-												</a>
-											  </p>
-											</div>
-					   				</div>
-					   			</div>
-					   		</div>
-				   		</div>
-				   	</li>
-				   	<li style="background-image: url(images/img_bg_2.jpg);">
-				   		<div class="overlay"></div>
-				   		<div class="container-fluid">
-				   			<div class="row">
-					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-					   				<div class="slider-text-inner">
-					   					<div class="desc">
-						   					<h1>I am <br>a Data Science and AI/ML Enthusiast</h1>
-												<!-- <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2> -->
-												<p>
-													<a class="btn btn-primary btn-learn" href="https://www.linkedin.com/in/isathyam31/">
-													  LinkedIn <i class="icon-briefcase3"></i>
-													</a>
-												  </p>
-											</div>
-					   				</div>
-					   			</div>
-					   		</div>
-				   		</div>
-				   	</li>
-				  	</ul>
-			  	</div>
-			</section>
+                <!-- Kreesalis Experience -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <h3>AI Software Developer</h3>
+                            <div class="experience-company">Kreesalis</div>
+                            <div class="experience-period">May 2025 - Present</div>
+                        </div>
+                        <div class="experience-badge">Internship</div>
+                    </div>
+                    <div class="experience-description">
+                        <p>Built an agent system with RAG and Model Context Protocol (MCP) that facilitated real-time context-aware database
+                            interaction and lowered manual data retrieval efforts by 40%</p>
+                        <p>Designed a secure, schema-constrained domain agent that ensured compliant access to financial data, resulting in a 30% drop
+                            in invalid or failed queries</p>
+                        <p>Optimized multi-agent context handling and retrieval logic, leading to a 35% reduction in response time and 50% increase in
+                            query resolution accuracy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<section class="colorlib-about" data-section="about">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="col-md-12">
-									<div class="about-desc">
-										<span class="heading-meta">About Me</span>
-										<h2 class="colorlib-heading">Who Am I?</h2>
-										<p><strong>Hello I'm Sathyam A</strong> and I am from Bangalore, India. I am currently a third-year undergraduate student pursuing Computer Science at the Indian Institute of Information Technology Sri City. My passion lies in the fields of Data Science and Generative AI, 
-											and I am actively seeking opportunities to apply my skills and knowledge in these areas.</p>
-									</div>
-								</div>
-							</div>
-							<!-- <div class="row">
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-									<div class="services color-1">
-										<span class="icon2"><i class="icon-bulb"></i></span>
-										<h3>Graphic Design</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-									<div class="services color-2">
-										<span class="icon2"><i class="icon-globe-outline"></i></span>
-										<h3>Web Design</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
-									<div class="services color-3">
-										<span class="icon2"><i class="icon-data"></i></span>
-										<h3>Software</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-									<div class="services color-4">
-										<span class="icon2"><i class="icon-phone3"></i></span>
-										<h3>Application</h3>
-									</div>
-								</div>
-							</div> -->
-							<div class="row">
-								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-									<div class="hire">
-										<h2>I have completed various projects in the fields of<br>Data Science, Machine Learning, and Generative AI.</h2>
-										<a href="https://github.com/iSathyam31" class="btn-hire">GitHub</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/iSathyam31/Intrusion_Detection_System_Using_Deep_Learning" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Intrusion Detection System Using Deep Learning</h3>
+                        <p>Designed a Machine Learning-based Intrusion Detection System utilizing the CICIDS2017 dataset for precise detection of network intrusions and anomalies. The project encompassed extensive preprocessing of data, feature extraction, and application of various classification algorithms to improve cybersecurity. Results revealed high accuracy for malicious traffic detection, which led to more reliable threat detection systems.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">Cybersecurity</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/iSathyam31/ViBERTa" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://huggingface.co/spaces/iSathyam03/ViBERTa" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-hamburger"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>ViBERTa</h3>
+                        <p>ViBERTa is a sentiment analysis model fine-tuned from DeBERTa-v3-base on McDonald's customer reviews. It classifies reviews into positive, neutral, or negative sentiments with high accuracy. The project includes a Streamlit app for real-time predictions and is built using PyTorch and Hugging Face Transformers. It demonstrates effective fine-tuning and deployment of transformer-based models for real-world text classification tasks.
 
-			
-			<section class="colorlib-services" data-section="services">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">What I do?</span>
-							<h2 class="colorlib-heading">Here are some of my expertise</h2>
-						</div>
-					</div>
-					<div class="row row-pt-md">
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-1">
-								<span class="icon">
-									<i class="icon-bulb"></i>
-								</span>
-								<div class="desc">
-									<h3>Data Science</h3>
-									<p>Analyzing data to extract meaningful insights and drive decision-making.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-4">
-								<span class="icon">
-									<i class="icon-layers2"></i>
-								</span>
-								<div class="desc">
-									<h3>Machine Learning</h3>
-									<p>Building systems that learn from data to improve performance and efficiency.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-3">
-								<span class="icon">
-									<i class="icon-phone3"></i>
-								</span>
-								<div class="desc">
-									<h3>Generative AI</h3>
-									<p>Generating new content or data using advanced algos. for creative applications.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			
-			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
-				<div class="overlay"></div>
-				<div class="colorlib-narrow-content">
-					<div class="row">
-					</div>
-					<div class="row">
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="150" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Mentored Students</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="20" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Projects</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="5" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Certifications</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="1" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Industry Recognition</span>
-						</div>
-					</div>
-				</div>
-			</div>
+                            </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Sentiment Analysis</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">DeBERTa</span>
+                            <span class="tech-tag">Hugging Face</span>
+                        </div>
+                    </div>
+                </div>
 
-			<section class="colorlib-skills" data-section="skills">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">My Specialty</span>
-							<h2 class="colorlib-heading animate-box">My Skills</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<p>Proficient in Python with familiarity in R and SQL, specializing in Data Science with expertise in data cleaning, preprocessing, EDA, and statistical analysis. 
-								Skilled in web scraping using Beautiful Soup and proficient with BI tools like Power BI and Tableau. Experienced in advanced analytics including 
-								Time Series analysis (ARIMA, SARIMA), Data Mining (Supervised and Unsupervised ML), and Deep Learning (ANN, CNN, RNN) for NLP tasks like sentiment analysis and others. 
-								Hands-on experience in Generative AI with frameworks like Lang Chain, and adept at deploying applications on cloud platforms like Heroku and AWS. 
-								Strong communication, management, and mentoring skills complement technical proficiency.</p>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Data Analytics</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-								    <span>85%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>Data Visualization</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
-								    <span>95%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Data Mining</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-								    <span>80%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>Deep Learning and NLP</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-								    <span>80%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Time Series Analytics</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
-								    <span>75%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>GenAI Applications and Frameworks</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-								    <span>85%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/iSathyam31/SavorAI" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="savorai.streamlit.app/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Savor AI</h3>
+                        <p>SavorAI is an AI-powered restaurant menu assistant that analyzes uploaded PDF menus to provide personalized dish recommendations and interactive dining guidance. It supports natural‑language conversations, understands context‑aware queries, and factors in dietary preferences or restrictions. Built using Streamlit and Ollama with a RAG-based retrieval pipeline, it aims to simplify meal selection based on mood, price range, and availability.
+                            </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Retrieval Augmented Generation</span>
+                            <span class="tech-tag">Generative AI</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Chatbot</span>
+                        </div>
+                    </div>
+                </div>
 
-			<section class="colorlib-education" data-section="education">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Education</span>
-							<h2 class="colorlib-heading animate-box">Education</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<div class="fancy-collapse-panel">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingOne">
-									        <h4 class="panel-title">
-									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Bachelors Of Technology
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-									         <div class="panel-body">
-									            <div class="row">
-										      		<div class="col-md-6">
-										      			<p>I am currently in my 3rd year at Indian Institute of Information Technology Sri City pursuing Computer Science Engineering. </p>
-														  <p><strong>Timeline:</strong> 2022-Present</p>
-													</div>
-										      	</div>
-									         </div>
-									    </div>
-									</div>
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingTwo">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">SENIOR SECONDARY SCHOOL
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-									        <div class="panel-body">
-									            <p>I prepared for JEE in <strong>Kota</strong>, and my dummy school program was at Aklank Public School where I completed my 12th. As my focus was on JEE I was studying at the prestigious institutions such as.</p>
-													<ul>
-														<li>Motion Education Pvt. Ltd - <strong>2019-2021</strong> </li>
-														<li>ISAC Learning (My Drop Year) - <strong>2021-2022</strong></li>
-													</ul>
-									        </div>
-									    </div>
-									</div>
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingThree">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">High School Education
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-									        <div class="panel-body">
-									            <p>I grew up in <strong>Bangalore</strong>, and completed my high school education at Sri Chaitanya International School.</p>
-												<p><strong>Timeline:</strong> 2014-2019</p>	
-									        </div>
-									    </div>
-									</div>
+                <div class="project-card featured" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/iSathyam31/ML-Based-Classification-of-MECP2-Mutations" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://mecp2-analysis.streamlit.app/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MECP2 Genomic Classification</h3>
+                        <p>This project classifies MECP2 gene mutations as benign or pathogenic using a hybrid machine learning and deep learning approach. It integrates genomic context, mutation characteristics, and sequence-based features through machine learning and deep learning models with SMOTE balancing and Optuna tuning. Expert-derived genomic features—like trinucleotide context, flanking sequence, mutation position, and molecular impact—drive robust variant classification.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Genomics</span>
+                            <span class="tech-tag">MECP2 Classification</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Bioinformatics</span>
+                        </div>
+                    </div>
+                </div>
 
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+                <div class="project-card" data-tilt>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/iSathyam31/EEG-Emotion-Analysis-DEAP" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>EEG Analysis On DEAP Dataset</h3>
+                        <p>We performed emotion classification with EEG signals from the DEAP dataset. The task was to comprehend human emotions through the interpretation of brainwaves. The project involved cleaning multichannel EEG signals, extracting significant features, and training machine learning models to recognize emotional states such as valence and arousal.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Brain Computer Interface</span>
+                            <span class="tech-tag">Information Extraction</span>
+                            <span class="tech-tag">EEG Analysis</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
 
-			<section class="colorlib-experience" data-section="experience">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Experience</span>
-							<h2 class="colorlib-heading animate-box">Work Experience</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-				         <div class="timeline-centered">
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Income Prediction Model</h3>
+                        <p>This project predicts whether an individual's income exceeds $50K using various machine learning algorithms. It involves extensive data preprocessing, feature engineering, and model evaluation. Algorithms like Logistic Regression, Decision Trees, and Random Forests are compared for performance. The final model is deployed using Flask and Docker for scalable, production-ready inference.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Income Prediction</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Flask Deployment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					               <div class="timeline-icon color-1">
-					                  <i class="icon-pen2"></i>
-					               </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages & BI Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/python.svg" alt="Python" class="skill-icon" title="Python">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/sql.svg" alt="SQL" class="skill-icon" title="SQL">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/powerbi.svg" alt="Power BI" class="skill-icon" title="Power BI">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/tableau.svg" alt="Tableau" class="skill-icon" title="Tableau">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Python Frameworks</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/numpy.svg" alt="NumPy" class="skill-icon" title="NumPy">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/pandas.svg" alt="Pandas" class="skill-icon" title="Pandas">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/Matplotlib.svg" alt="Matplotlib" class="skill-icon" title="Matplotlib">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/seaborn.svg" alt="Seaborn" class="skill-icon" title="Seaborn">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/scikit-learn.svg" alt="Scikit-Learn" class="skill-icon" title="Scikit-Learn">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/pydantic.svg" alt="Pydantic" class="skill-icon" title="Pydantic">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/PyTorch.svg" alt="PyTorch" class="skill-icon" title="PyTorch">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Generative AI Technologies</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/langchain.svg" alt="LangChain" class="skill-icon" title="LangChain">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/langgraph.svg" alt="LangGraph" class="skill-icon" title="LangGraph">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/llamaindex.svg" alt="LlamaIndex" class="skill-icon" title="LlamaIndex">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/huggingface.svg" alt="Hugging Face" class="skill-icon" title="Hugging Face">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Agentic AI Frameworks & Principles</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/agno.svg" alt="Agno" class="skill-icon" title="Agno">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/crewai.svg" alt="Crew AI" class="skill-icon" title="Crew AI">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/mcp.svg" alt="Model Context Protocol" class="skill-icon" title="Model Context Protocol">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/agent-development-kit.svg" alt="Google ADK" class="skill-icon" title="Google ADK">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/A2A.svg" alt="A2A" class="skill-icon" title="A2A">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Deployment and Containers</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/FastAPI.svg" alt="FastAPI" class="skill-icon" title="FastAPI">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/Azure.svg" alt="Microsoft Azure" class="skill-icon" title="Microsoft Azure">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/GitHub Actions.svg" alt="Github Actions" class="skill-icon" title="Github Actions">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/Docker.svg" alt="Docker" class="skill-icon" title="Docker">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Product Management Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/Jira.svg" alt="JIRA" class="skill-icon" title="JIRA">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/huly.svg" alt="Huly" class="skill-icon" title="Huly">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/Notion-logo.svg" alt="Notion" class="skill-icon" title="Notion">
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/tech-stack/miro.svg" alt="Miro" class="skill-icon" title="Miro">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					               <div class="timeline-label">
-					                  <h2><a href="#">Data Science Intern</a> <span>May 2024 - July 2024</span></h2>
-							  <h4>AI Varient</h4>     
-					                  <p>During a 3-month internship, I gained practical experience in data science, including data analysis, statistical modeling, and machine learning algorithms. I developed and implemented various models, utilizing NLP to extract meaningful insights from textual data.</p>
-					               </div>
-					            </div>
-					         </article>
+    <!-- Leadership & Activities Section -->
+    <section id="activities" class="activities">
+        <div class="container">
+            <h2 class="section-title">Leadership & Activities</h2>
+            <div class="activities-content">
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="activity-details">
+                        <h3>Matrix - Data Science Club President</h3>
+                        <p class="activity-period">April 2024 - June 2025</p>
+                        <p class="activity-location">IIIT Sri City, Andhra Pradesh</p>
+                        <ul class="activity-achievements">
+                            <li>Led a core team of 12 members and mentored over 250 students in Data Science, ML, and Generative AI</li>
+                            <li>Conducted 15+ technical sessions on core Data Science concepts, ML workflows, and emerging trends in Generative AI</li>
+                            <li>Organized large-scale hackathons and events impacting 1000+ participants during the college's annual techno-cultural fest</li>
+                            <li>Initiated and created podcast series featuring college seniors sharing their career journeys to guide upcoming juniors in navigating their academic and professional paths</li>
+                        </ul>
+                        <div class="club-photos">
+                            <h5>Club Activities Gallery</h5>
+                            <div class="photo-gallery">
+                                <div class="gallery-container">
+                                    <!-- Slide 1 -->
+                                    <div class="gallery-slide active">
+                                        <div class="photo-grid">
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic1.png" alt="Club Activity 1" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic2.png" alt="Club Activity 2" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic3.png" alt="Club Activity 3" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic4.png" alt="Club Activity 4" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Slide 2 -->
+                                    <div class="gallery-slide">
+                                        <div class="photo-grid">
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic5.png" alt="Club Activity 5" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic6.png" alt="Club Activity 6" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic7.png" alt="Club Activity 7" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic8.png" alt="Club Activity 8" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Slide 3 -->
+                                    <div class="gallery-slide">
+                                        <div class="photo-grid">
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic9.png" alt="Club Activity 9" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic10.png" alt="Club Activity 10" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic11.png" alt="Club Activity 11" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic12.png" alt="Club Activity 12" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Slide 4 -->
+                                    <div class="gallery-slide">
+                                        <div class="photo-grid">
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic13.jpeg" alt="Club Activity 13" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic14.jpeg" alt="Club Activity 14" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic15.jpeg" alt="Club Activity 15" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic16.jpeg" alt="Club Activity 16" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Slide 5 -->
+                                    <div class="gallery-slide">
+                                        <div class="photo-grid">
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic17.jpeg" alt="Club Activity 17" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic18.jpeg" alt="Club Activity 18" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic19.jpeg" alt="Club Activity 19" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic20.jpeg" alt="Club Activity 20" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Slide 6 -->
+                                    <div class="gallery-slide">
+                                        <div class="photo-grid">
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic21.jpeg" alt="Club Activity 21" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic22.jpeg" alt="Club Activity 22" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic23.jpeg" alt="Club Activity 23" />
+                                            </div>
+                                            <div class="photo-placeholder">
+                                                <img src="assets/club-activities/pic24.jpeg" alt="Club Activity 24" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
 
+                                </div>
+                                
+                                <!-- Gallery Controls -->
+                                <div class="gallery-controls">
+                                    <button class="gallery-btn prev-btn" onclick="changeSlide(-1)">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </button>
+                                    <div class="gallery-indicators">
+                                        <span class="indicator active" onclick="currentSlide(1)"></span>
+                                        <span class="indicator" onclick="currentSlide(2)"></span>
+                                        <span class="indicator" onclick="currentSlide(3)"></span>
+                                        <span class="indicator" onclick="currentSlide(4)"></span>
+                                        <span class="indicator" onclick="currentSlide(5)"></span>
+                                        <span class="indicator" onclick="currentSlide(6)"></span>
+                                    </div>
+                                    <button class="gallery-btn next-btn" onclick="changeSlide(1)">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-2">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Data Analyst Intern</a> <span>March 2024 - April 2024</span></h2>
-							<h4>Cosmic365.AI</h4>       
-					                  <p>I devised and executed targeted data collection strategies, leading 3+ projects over a 2-month duration of working schedule.</p>
-					               </div>
-					            </div>
-					         </article>
+                <div class="hobbies-section">
+                    <h3>Extracurricular Interests</h3>
+                    <div class="hobbies-grid">
+                        <div class="hobby-item">
+                            <i class="fas fa-tv"></i>
+                            <span>Watching Anime</span>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fas fa-music"></i>
+                            <span>Music</span>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fas fa-baseball-ball"></i>
+                            <span>Playing Cricket</span>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fas fa-utensils"></i>
+                            <span>Foodie</span>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fas fa-plane"></i>
+                            <span>Travelling</span>
+                        </div>
 
-					         
-					      </div>
-					   </div>
-				   </div>
-				</div>
-			</section>
-			<section class="colorlib-experience" data-section="vol-experience">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Vol Experience</span>
-							<h2 class="colorlib-heading animate-box">Volunteering Experience</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-				         <div class="timeline-centered">
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					               <div class="timeline-icon color-1">
-					                  <i class="icon-pen2"></i>
-					               </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always interested in discussing new opportunities, innovative projects, or just having a chat about technology and AI.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:sathyam.a31@gmail.com">sathyam.a31@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+917014816209">+91 7014816209</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Bengaluru, Karnataka</span>
+                            </div>
+                        </div>
+                    </div>
 
-					               <div class="timeline-label">
-					                  <h2><a href="#">Data Science Domain Lead</a> <span>May 2024 - Present</span></h2>
-					                  <p>I am currently the Data Science Domain Lead of our Project Club <strong>IOTA</strong>.</p>
-					               </div>
-					            </div>
-					         </article>
+                    <div class="social-links">
+                        <a href="https://github.com/iSathyam31" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/isathyam31/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:sathyam.a31@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
 
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-2">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Data Science Club Lead </a> <span>April 2024 - Present</span></h2>
-									   <p> Recently I even took on the role of Club Lead at the Data Science club of our college <strong>MATRIX</strong>.</p>
-					               </div>
-					            </div>
-							</article>
-							 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Sathyam A. All rights reserved.</p>
+                <p>Designed with ❤️ and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-3">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Data Science Club Core Member</a> <span>November 2023 - April 2024</span></h2>
-					                  <p>In the past, during my 3rd semester, I was elected as the core member of <strong>MATRIX</strong>, the Data Science Club of our college.</p>
-					               </div>
-					            </div>
-					         </article>
-					      </div>
-					   </div>
-				   </div>
-				</div>
-			</section>
-
-
-
-
-
-
-
-			<section class="colorlib-work" data-section="projectsbro">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">My Work</span>
-							<h2 class="colorlib-heading animate-box">Recent Projects</h2>
-						</div>
-					</div>
-					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-					</div>
-					<div class="row">
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/img-1.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="https://github.com/iSathyam31/OtakuOracle">Otaku Oracle</a></h3>
-										<span>Generative AI</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url(images/img-2.png);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="https://github.com/iSathyam31/CardioPredict">Cardio Predict</a></h3>
-										<span>Data Science and ML</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-							<div class="project" style="background-image: url(images/img-3.png);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="https://github.com/iSathyam31/WealthWise-Predictor">WealthWise Predictor</a></h3>
-										<span>Data Science and ML</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
-							<div class="project" style="background-image: url(images/img-4.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="https://github.com/iSathyam31/Google-Stock-Forecasting">Google Stock Forecasting</a></h3>
-										<span>Data Analytics and Time Series</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(images/img-5.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="https://github.com/iSathyam31/Synonymizer">Synonymizer</a></h3>
-										<span>Generative AI</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url(images/img-6.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="https://github.com/iSathyam31/Culinary-Companion">Culinary Companion</a></h3>
-										<span>Generative AI</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box">
-							<p><a href="https://github.com/iSathyam31" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- <section class="colorlib-blog" data-section="blog">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Read</span>
-							<h2 class="colorlib-heading">Recent Blog</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-								<div class="desc">
-									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-									<h3><a href="blog.html">Renovating National Gallery</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="images/blog-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-								<div class="desc">
-									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-									<h3><a href="blog.html">Wordpress for a Beginner</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="images/blog-3.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-								<div class="desc">
-									<span><small>April 14, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-									<h3><a href="blog.html">Make website from scratch</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box">
-							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
-						</div>
-					</div>
-				</div>
-			</section> -->
-
-			<section class="colorlib-contact" data-section="contact">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Get in Touch</span>
-							<h2 class="colorlib-heading">Contact</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-5">
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-globe-outline"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="#">sathyama0302@gmail.com</a></p>
-								</div>
-							</div>
-
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-map"></i>
-								</div>
-								<div class="colorlib-text">
-									<p>Electronic City Bangalore</p>
-								</div>
-							</div>
-
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-phone"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="tel://">+91 70148162091</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-7 col-md-push-1">
-							<div class="row">
-								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-									<form action="">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Name">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Subject">
-										</div>
-										<div class="form-group">
-											<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-										</div>
-										<div class="form-group">
-											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
-										</div>
-									</form>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</div><!-- end:colorlib-main -->
-	</div><!-- end:container-wrap -->
-	</div><!-- end:colorlib-page -->
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
-	
-	
-	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
-
-	</body>
-</html>
-
+    <script src="script.js"></script>
+</body>
+</html> 
